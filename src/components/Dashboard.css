@@ -1,0 +1,47 @@
+/* Dashboard.css */
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('BackgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial,sans-serif;
+}
+
+.dashboard h1 {
+    margin-bottom: 55px;
+    color: #0f0f0f; 
+     /* White title color */
+}
+
+.dashboard ul {
+    display: flex;
+    gap: 5px;  /* Spacing between the items */
+    list-style: none;  /* Remove default list styling */
+    text-align: center;  
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard li {
+    font-size: 18px;
+}
+
+.dashboard a {
+    color: #0b0c0c;  /* Green color for links */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    background-color: rgb(190, 61, 61);
+}
+
+
+.dashboard a:hover {
+    background-color: #05dfd4;  /* Dark gray background on hover */
+    
+}

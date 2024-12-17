@@ -1,0 +1,88 @@
+/* Home.css */
+
+/* Set the background image for the Home page */
+.home-container {
+  background-image: url("homepageimage.jpg"); /* Replace with your image URL */
+  background-size: cover;  /* Make sure the image covers the entire screen */
+  background-position: center;  /* Center the image */
+  height: 93vh;  /* Ensure the container covers the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;  /* Set text color to white for better visibility */
+}
+
+/* Overlay to improve text readability */
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+/* Content container */
+.home-content {
+  z-index: 2;  /* Ensure the content appears above the overlay */
+  padding: 20px;
+  max-width: 800px;  /* Limit the content width */
+  margin: 0 20px;
+  text-align: left;
+}
+
+.h1 {
+  font-size: 3.5rem;  /* Large heading */
+  font-weight: 700;  /* Bold for emphasis */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Subtle shadow for contrast */
+}
+
+.h2 {
+  font-size: 1.75rem; /* Slightly smaller subheading */
+  font-weight: 400; /* Lighter weight for subheading */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); /* Keep or adjust as needed */
+  color: #001c30; /* Darker shade of gray */
+}
+
+
+/* Optional: Adding some spacing between the heading and subheading */
+.home-content h1,
+.home-content h2 {
+  margin-bottom: 20px;
+}
+.footer1 {
+  background: linear-gradient(to right,#000000, #000000);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 0.0;
+  height: 10px;
+
+  display: flex;
+align-items: center; /* Vertically center text */
+justify-content: center; /* Horizontally center text */
+overflow: hidden;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-container {
+    background-position: top; /* Focus on the top of the image */
+  }
+  h1 {
+    font-size: 2.5rem;  /* Adjust font size for smaller screens */
+  }
+  h2 {
+    font-size: 1.25rem;  /* Adjust font size for smaller screens */
+  }
+}
