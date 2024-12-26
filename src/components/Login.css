@@ -1,21 +1,39 @@
-/* Login.css */
-
 /* Container for centering the login form */
 .login-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
   height: 100vh;
-  background-image: url('BackgroundImage.jpg'); /* Path to your background image */
+  padding-left: 400px;
+  background-image: url('homepageimage.jpg'); /* Path to your background image */
   background-size: cover; /* Cover the entire viewport */
   background-position: center;
   font-family: Arial, sans-serif;
 }
 
+.login-header {
+  position: absolute; /* Positioning it to the top-left */
+  top: 100px;
+  left: 120px;
+  text-align: left;
+}
+
+.login-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-header h2 {
+  font-size: 1.5rem;
+  color: #2c84cc;
+  margin-bottom: 0;
+}
+
 /* Styling the login form */
 .login-form {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for readability */
   border-radius: 8px;
@@ -62,14 +80,14 @@
 .forgot-password-form button {
   padding: 15px 15px;
   margin-top: 20px;
-  background-color: #4CAF50;
+  background-color: #3eb7c7;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .forgot-password-form button:hover {
-  background-color: #45a049;
+  background-color: #3db4c4;
 }
 
 /* Styling the submit button */
@@ -77,7 +95,7 @@
   width: 100%;
   padding: 12px;
   margin-top: 20px;
-  background-color: #4CAF50;
+  background-color: #3fbccd;
   color: white;
   border: none;
   border-radius: 4px;
@@ -86,5 +104,5 @@
 }
 
 .login-form button:hover {
-  background-color: #45a049;
+  background-color: #039cb0;
 }

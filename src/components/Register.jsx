@@ -34,6 +34,10 @@ function Register() {
 
   return (
     <div className="register-container">
+      <div className="register-header">
+        <h1>Welcome to E-Doctor!</h1>
+        <h2>Your health, our priority.</h2>
+      </div>
       <form className="register-form" onSubmit={handleRegister}>
         <h2>Register</h2>
         <label htmlFor="username">Username</label>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import Chatbot from './Chatbot'; // Import Chatbot component
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -25,6 +26,11 @@ function Contact() {
       <div className="contact-content">
         <h1>Contact Us</h1>
         <p>We are here to assist you with any inquiries or support. Reach out to us anytime!</p>
+        <p>You can also contact us directly via email at <strong>support@edoctor.com</strong></p>
+
+        {/* Include the Chatbot */}
+        <Chatbot />
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
@@ -68,6 +74,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    
   );
 }
 

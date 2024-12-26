@@ -9,7 +9,6 @@ function Login() {
   const [showForgotPassword, setShowForgotPassword] = useState(false); // State to show/hide forgot password form
   const navigate = useNavigate();
 
-  
   const adminCredentials = {
     username: 'admin', // Admin username
     password: 'admin123', // Admin password
@@ -26,7 +25,7 @@ const PatientCredentials = {
   const handleForgotPassword = () => {
     if (email) {
       // Simulating sending a reset email
-      alert(`Password reset link has been sent to ${email}`);
+      alert('Password reset link has been sent to ${email}');
       setShowForgotPassword(false); // Close the forgot password form
     } else {
       alert('Please enter your email address.');
@@ -68,8 +67,13 @@ const PatientCredentials = {
 };
   return (
     <div className="login-container">
+      <div className="login-header">
+        <h1>Welcome to E-Doctor!</h1>
+        <h2>Your health, our priority.</h2>
+      </div>
       <form className="login-form" onSubmit={handleLogin}>
         <h2>Login</h2>
+        
         <label htmlFor="username">Username</label>
         <input
           type="text"
@@ -125,4 +129,3 @@ const PatientCredentials = {
 }
 
 export default Login;
-

@@ -10,9 +10,12 @@ import Dashboard from './components/Dashboard';
 import DoctorList from './components/sections/DoctorList';
 import AppointmentList from './components/sections/AppointmentList';
 import AvailabilityDates from './components/sections/AvailabilityDates';
+import PatientList from './components/sections/PatientList';
+import FeedbackList from './components/sections/FeedbackList';
 import Doctordashboard from './components/Doctordashboard';
 import PatientDashboard from './components/PatientDashboard';
-
+import UserList from './components/sections/UserList';
+import AdminList from './components/sections/AdminList';
 function App() {
   // State to hold doctor data
   const [doctors, setDoctors] = useState([]);
@@ -28,8 +31,8 @@ function App() {
 <div className="content">
       <Routes>
       <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
@@ -37,7 +40,10 @@ function App() {
         <Route path="/availabilitydates" element={<AvailabilityDates />} />
         <Route path="/Doctordashboard" element={<Doctordashboard />} /> 
         <Route path="/PatientDashboard" element={<PatientDashboard/>} />
-
+        <Route path="/patientlist" element={<PatientList />} />
+        <Route path="/feedbacklist" element={<FeedbackList />} />
+        <Route path="/UserList" element={<UserList />} />
+        <Route path="/AdminList" element={<AdminList />} />
 
         <Route 
           path="/doctorlist" 

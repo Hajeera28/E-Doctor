@@ -3,16 +3,37 @@
 /* Centering the registration form */
 .register-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; 
   align-items: center;
   height: 100vh;
+  padding-left: 400px;
   background-color: #f4f4f4;
-  background-image: url('BackgroundImage.jpg');
+  background-image: url('homepageimage.jpg');
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+.register-header {
+  position: absolute; /* Positioning it to the top-left */
+  top: 100px;
+  left: 120px;
+  text-align: left;
 }
 
+.register-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.register-header h2 {
+  font-size: 1.5rem;
+  color: #2c84cc;
+  margin-bottom: 0;
+}
 .register-form {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
@@ -45,7 +66,7 @@
   width: 100%;
   padding: 12px;
   margin-top: 20px;
-  background-color: #4CAF50;
+  background-color: #3fbccd;
   color: white;
   border: none;
   border-radius: 4px;
@@ -54,7 +75,7 @@
 }
 
 .register-form button:hover {
-  background-color: #45a049;
+  background-color: #039cb0;
 }
 
 .register-form p {
